@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {Card,CardImg,CardImgOverlay,CardText,CardBody,CardTitle} from 'reactstrap';
+import {Card,CardImg,CardText,CardBody,CardTitle} from 'reactstrap';
 
 class DishdetailComponent extends Component{
     renderComments(comments) {
@@ -57,9 +57,11 @@ class DishdetailComponent extends Component{
         const dishItem = this.renderDish(dish)
         const commentItem = this.renderComments(dish.comments)
         return (
-            <div className='row'>
+            <div className='container'>
+                <div className='row'>
                 {dishItem}
                 {commentItem}
+                </div>
             </div>
         )
     }
