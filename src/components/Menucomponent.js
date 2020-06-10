@@ -3,7 +3,7 @@ import {Card,CardImg,CardImgOverlay,CardText,CardBody,CardTitle} from 'reactstra
 
     function RenderMenuItem({dish,onClick}){
         return(
-            <Card onClick={() =>onClick(dish.id)}>
+            <Card>
             <CardImg width="100%" object src={dish.image} alt={dish.name} />
             <CardImgOverlay>
                 <CardTitle>{dish.name}</CardTitle>
